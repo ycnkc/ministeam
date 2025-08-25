@@ -13,9 +13,8 @@
       margin: 0;
       font-family: Arial, sans-serif;
       overflow: hidden;
-      background: none; /* Arka plan body::after ile verildi */
+      background: none; 
     }
-    /* Arka plan resmi ve blur efekti */
     body::after {
       content: "";
       position: fixed;
@@ -26,13 +25,11 @@
       z-index: -1;
       transform: scale(1.1);
     }
-    /* Navbar için z-index */
     nav.navbar {
       z-index: 10;
     }
-    /* Login kutusu */
     .login-card {
-      background-color: rgba(11, 36, 71, 0.85); /* lacivert yarı saydam */
+      background-color: rgba(11, 36, 71, 0.85); 
       border-radius: 10px;
       padding: 2rem;
       box-shadow: 0 0 15px rgba(0,0,0,0.5);
@@ -84,7 +81,6 @@
 
 <body class="d-flex flex-column vh-100 text-white">
 
-  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
     <a class="navbar-brand d-flex align-items-center" href="#">
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/2048px-Steam_icon_logo.svg.png" alt="Steam Logo" style="height:20px; width:auto; margin-right:8px;">
@@ -124,7 +120,6 @@
     </div>
   </nav>
 
-  <!-- Login form container -->
   <div class="d-flex flex-grow-1 align-items-center justify-content-center">
     <div class="login-card text-white">
       <h2 class="mb-4 text-center">Log In</h2>

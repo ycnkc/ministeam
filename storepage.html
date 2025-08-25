@@ -27,20 +27,19 @@
       margin-right: 10px;
     }
 
-    /* Slider yüksekliği */
     #image-slider .carousel-item img {
       height: 150px;
       object-fit: cover;
       border-radius: 5px;
     }
         #image-slider .carousel-item img {
-  height: 400px;  /* slider fotoğrafları biraz büyük */
+  height: 400px;  
   object-fit: cover;
   border-radius: 8px;
 }
 
 .main-header-img {
-  height: 200px; /* header biraz daha küçük */
+  height: 200px; 
   width: 100%;
   object-fit: cover;
   border-radius: 10px;
@@ -55,9 +54,9 @@
   background-color: #50b634 !important;
   border-color: #50b634 !important;
   color: white !important;
-  font-size: 0.9rem;        /* Buton yazı boyutu biraz küçüldü */
-  padding: 6px 12px;        /* Butonun iç boşlukları küçültüldü */
-  border-radius: 0 !important; /* Kenarları tamamen keskin */
+  font-size: 0.9rem;        
+  padding: 6px 12px;       
+  border-radius: 0 !important; 
 }
 
 .btn-warning:hover {
@@ -66,17 +65,17 @@
 }
 
 .price-addcart-container {
-  background-color: #000; /* siyah kutu */
+  background-color: #000; 
   padding: 5px 15px;
   border-radius: 1px;
   display: inline-flex;
   align-items: center;
-  gap: 15px; /* fiyat ile buton arası boşluk */
+  gap: 15px; 
 }
 
 .price-addcart-container #game-price {
   color: #aaa;
-  font-size: 14px; /* fiyat boyutu */
+  font-size: 14px; 
   font-weight: 700;
 }
 
@@ -171,7 +170,7 @@ body, html {
       </li>
     </ul>
 
-    <!-- Log In & Sign Up buttons -->
+ 
     <div class="d-flex">
       <a href="login.html" class="btn btn-outline-light btn-sm me-2">Log In</a>
     </div>
@@ -183,7 +182,7 @@ body, html {
 
   <div class="container my-5">
     <div class="row justify-content-center align-items-start g-4">
-      <!-- Sol slider kısmı -->
+  
       <div class="col-md-6 d-flex flex-column">
         <div id="image-slider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
           <div class="carousel-inner" id="carousel-inner"></div>
@@ -207,7 +206,6 @@ body, html {
 
       </div>
 
-      <!-- Sağ içerik kısmı -->
       <div class="col-md-4">
         <img id="header-image" class="main-header-img mb-3" src="" alt="Game Header" />
 
@@ -244,12 +242,10 @@ body, html {
           return;
         }
 
-        // Header image sabit
         const headerImg = document.getElementById('header-image');
         headerImg.src = game.headerImage || game.image;
         headerImg.alt = game.name;
 
-        // Detaylar
         document.getElementById('game-title').textContent = game.name;
         document.getElementById('game-description').textContent = game.description;
         document.getElementById('game-rating').textContent = game.rating || 'N/A';
@@ -257,7 +253,6 @@ body, html {
         document.getElementById('game-publisher').textContent = game.publisher || 'N/A';
         document.getElementById('game-price').textContent = `$${game.price}`;
 
-        // Slider içeriği (Bootstrap Carousel yapısında)
         const carouselInner = document.getElementById('carousel-inner');
         const images = game.sliderImages || [game.image];
 
@@ -267,7 +262,6 @@ body, html {
           div.innerHTML = `<img src="${imgSrc}" class="d-block w-100" alt="${game.name} image ${index+1}">`;
           carouselInner.appendChild(div);
 
-// Buy başlığı ve fiyat kutusu
 document.getElementById('buy-title').textContent = `Buy ${game.name}`;
 document.getElementById('game-price').textContent = `$${game.price}`;
 
