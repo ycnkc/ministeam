@@ -23,6 +23,6 @@ git clone https://github.com/ycnkc/ministeam.git
 - This is a learning project for practicing web development and frontend skills.
 - Data is static and for demonstration purposes only.
 
-![image](/ministeam/images/ministeam1.png)
-![image](/ministeam/images/ministeam2.png)
+![image](ministeam/images/ministeam1.png)
+![image](ministeam/images/ministeam2.png)
 
